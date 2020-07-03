@@ -1,0 +1,25 @@
+{
+  "name": "web-setup",
+  "version": "1.0.0",
+  "description": "an npm package to help create a simple web project by quickly creating the necessary folders and files",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-setup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenhua-l/web-setup-npm.git"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "web",
+    "setup"
+  ],
+  "author": "kenhua-l",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenhua-l/web-setup-npm/issues"
+  },
+  "homepage": "https://github.com/kenhua-l/web-setup-npm#readme"
+}

@@ -6,6 +6,9 @@
   "scripts": {
     "test": "test-setup"
   },
+  "bin": {
+    "output": "script.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kenhua-l/web-setup-npm.git"

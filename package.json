@@ -24,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/kenhua-l/web-setup-npm/issues"
   },
-  "homepage": "https://github.com/kenhua-l/web-setup-npm#readme"
+  "homepage": "https://github.com/kenhua-l/web-setup-npm#readme",
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }

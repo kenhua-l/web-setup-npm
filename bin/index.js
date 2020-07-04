@@ -60,6 +60,10 @@ for(dependency of dependencies) {
   copyFileFunction(dependency[0], dependency[1]);
 }
 copyFolder('node_modules/web-setup-cli/src', '.');
+// add browserlistrc
+fs.writeFileSync('.browserslistrc', 'last 4 version', function(err){
+  if (err) throw err;
+});
 
 console.log('folder structure created');
 console.log('run `gulp` to complete the process and start developing');

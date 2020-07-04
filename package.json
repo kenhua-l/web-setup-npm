@@ -7,7 +7,7 @@
     "test": "index.js"
   },
   "bin": {
-    "start-project": "index.js"
+    "web-setup": "index.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/kenhua-l/web-setup-npm#readme",
   "dependencies": {
-    "fs": "0.0.1-security"
+    "bootstrap": "^5.0.0-alpha1",
+    "fs": "0.0.1-security",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {}
 }

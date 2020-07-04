@@ -1,15 +1,61 @@
 #! /usr/bin/env node
 const fs = require('fs');
-console.log("console.log output123");
-var destpath = "dest/";
-var srcpath = "src/";
-if (!fs.existsSync(destpath)){
-  fs.mkdirSync(destpath, { recursive: true });
-}
-if (!fs.existsSync(srcpath)){
-  fs.mkdirSync(srcpath, { recursive: true });
+var files = [
+  'src/css/main.scss',
+  'src/js/main.js',
+  'src/partials/head.html',
+  'src/partials/header.html',
+  'src/partials/footer.html',
+  'src/partials/scripts.html',
+  'src/index.html',
+  'dest/css/main.css',
+  'dest/js/main.js',
+  'dest/index.html'
+];
+
+// create files
+for(file of files) {
+  var folder = file.substring(0, file.lastIndexOf('/') + 1);
+  console.log(folder);
+  if(!fs.existsSync(folder)) {
+    fs.mkdirSync(folder, { recursive: true });
+  }
+  let fd;
+  try {
+    fd = fs.openSync(file, 'a');
+    fs.appendFileSync(fd, 'stringg', 'utf8');
+  } catch (err) {
+    console.log('bad,', file)
+    /* Handle the error */
+  } finally {
+    if (fd !== undefined)
+      fs.closeSync(fd);
+  }
 }
 
+// copy files from node_modules to dest
+var dependencies = [
+  ['node_modules/bootstrap/dist/css/bootstrap.min.css', 'dest/css/bootstrap.min.css'],
+  ['node_modules/bootstrap/dist/js/bootstrap.min.js', 'dest/js/bootstrap.min.js'],
+  ['node_modules/jquery/dist/jquery.min.js', 'dest/js/jquery.min.js']
+]
+for(dependency of dependencies) {
+  try {
+    fs.copyFileSync(dependency[0], dependency[1]);
+  } catch (err) {
+    console.log('errorrrrr');
+  }
+}
+
+// const { exec } = require('child_process');
+// exec('npm i bootstrap@next', function(err, stdout, stderr) {
+//   if(err) {
+//     console.log('exec error', err);
+//   } else {
+//     console.log('stdout:', stdout);
+//     console.log('stderr:', stderr);
+//   }
+// });
 exports.printMsg = function() {
   console.log("this is a demo");
 }

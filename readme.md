@@ -1,18 +1,22 @@
-#web-setup-cli
+# web-setup-cli
 intro
 
-##What is this
+## Quick Start Setup
 
-##How to setup
+## Status
 
-##Dependencies
+## What is this and what is included
+
+## Dependencies
 - fs - to create folders
 
-##Maintenance
+## Maintenance
 
 
 ## TO-DO checklist
 - [x] create dest and src folders
-- [ ] recursively add css and js folders and a html file
+- [x] recursively add css and js folders and a html file
+- [x] get jquery and bootstrap
+- [ ] create base files
 - [ ] create gulpfile.js
 - [ ] documentation

@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+// create file structure
 const fs = require('fs');
 var files = [
   'src/css/main.scss',
@@ -23,10 +24,9 @@ for(file of files) {
   let fd;
   try {
     fd = fs.openSync(file, 'a');
-    fs.appendFileSync(fd, 'stringg', 'utf8');
+    fs.appendFileSync(fd, '', 'utf8');
   } catch (err) {
     console.log('bad,', file)
-    /* Handle the error */
   } finally {
     if (fd !== undefined)
       fs.closeSync(fd);
@@ -47,15 +47,18 @@ for(dependency of dependencies) {
   }
 }
 
-// const { exec } = require('child_process');
-// exec('npm i bootstrap@next', function(err, stdout, stderr) {
-//   if(err) {
-//     console.log('exec error', err);
-//   } else {
-//     console.log('stdout:', stdout);
-//     console.log('stderr:', stderr);
-//   }
-// });
+// initiate gulp
+const { exec } = require('child_process');
+exec('gulp', function(err, stdout, stderr) {
+  if(err) {
+    console.log('exec error', err);
+  } else {
+    console.log('stdout:', stdout);
+    console.log('stderr:', stderr);
+  }
+});
+
+
 exports.printMsg = function() {
   console.log("this is a demo");
 }

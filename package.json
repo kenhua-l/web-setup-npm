@@ -4,10 +4,10 @@
   "description": "an npm package to help create a simple web project by quickly creating the necessary folders and files",
   "main": "index.js",
   "scripts": {
-    "test": "test-setup"
+    "test": "index.js"
   },
   "bin": {
-    "output": "script.js"
+    "start-project": "index.js"
   },
   "repository": {
     "type": "git",
@@ -26,9 +26,7 @@
   },
   "homepage": "https://github.com/kenhua-l/web-setup-npm#readme",
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "fs": "0.0.1-security"
   },
-  "devDependencies": {
-    "gulp": "^4.0.2"
-  }
+  "devDependencies": {}
 }

@@ -14,9 +14,5 @@ intro
 
 
 ## TO-DO checklist
-- [x] create dest and src folders
-- [x] recursively add css and js folders and a html file
-- [x] get jquery and bootstrap
-- [ ] create base files
-- [ ] create gulpfile.js
+- [ ] integration
 - [ ] documentation

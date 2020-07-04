@@ -7,7 +7,7 @@
     "web-setup": "web-setup"
   },
   "bin": {
-    "web-setup": "./bin/index.js"
+    "web-setup": "bin/index.js"
   },
   "repository": {
     "type": "git",

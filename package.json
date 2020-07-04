@@ -1,13 +1,13 @@
 {
-  "name": "web-setup",
+  "name": "web-setup-cli",
   "version": "1.0.0",
   "description": "an npm package to help create a simple web project by quickly creating the necessary folders and files",
-  "main": "index.js",
+  "main": "bin/index.js",
   "scripts": {
-    "test": "index.js"
+    "web-setup": "web-setup"
   },
   "bin": {
-    "web-setup": "index.js"
+    "web-setup": "./bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,6 @@
     "autoprefixer": "^9.8.4",
     "bootstrap": "^5.0.0-alpha1",
     "browser-sync": "^2.26.7",
-    "fs": "0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-file-include": "^2.2.2",

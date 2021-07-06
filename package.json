@@ -1,6 +1,6 @@
 {
   "name": "web-setup-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "an npm package to help create a simple web project by quickly creating the necessary folders and files",
   "main": "bin/index.js",
   "scripts": {

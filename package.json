@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/kenhua-l/web-setup-npm#readme",
   "dependencies": {
-    "autoprefixer": "^9.8.4",
+    "autoprefixer": "^10.4.20",
     "bootstrap": "^5.0.0-alpha1",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-file-include": "^2.2.2",
-    "gulp-postcss": "^8.0.0",
+    "gulp-postcss": "^10.0.0",
     "jquery": "^3.5.1"
   }
 }
